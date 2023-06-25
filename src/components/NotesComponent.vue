@@ -12,7 +12,7 @@ const item = ref({ name: "", body: ""});
 
 /**
  * - gets values from form
- * - calls method on store to add student
+ * - calls method on store to add note
  * - clears form values
  */
 const addNote = () => {
