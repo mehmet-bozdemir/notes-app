@@ -5,6 +5,7 @@ export interface Note {
     name: string;
     id: string;
     body: string;
+    completed: boolean;
 }
 
 export const useMainStore = defineStore("mainstore", () => {
@@ -52,11 +53,29 @@ export const useMainStore = defineStore("mainstore", () => {
                 name: note.name,
                 id: Math.random() * 100 + "",
                 body: note.body,
+                completed: false
             },
             ...notes.value,
         ];
     };
 
+    /**
+     *
+     * @param data
+     */
+    const toggleNote = (data: Note, id:String) => {
+        notes.value = notes?.value?.map((item: Note) => {
+            if (item.id === id) {
+                return {
+                    ...item,
+                    completed: !data.completed,
+                };
+            } else {
+                return item;
+            }
+        });
+    };
+
     // export
-    return { addNote, removeNote, updateNote, notes, selectedNote}
+    return { addNote, removeNote, updateNote, notes, selectedNote, toggleNote}
 });
