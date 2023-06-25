@@ -73,7 +73,10 @@ const updateNote = () => {
     <div v-for="(item, index) in mainStore.notes" :key="index"
          class="flex justify-between items-center p-2 my-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
       <div class="flex w-9/12">
-        <div :class="item.completed ? 'line-through' : ''"><p>{{ item.body }}</p> </div>
+        <div>
+          <p class="font-semibold">{{ item.name }}</p>
+          <p :class="item.completed ? 'line-through' : ''">{{ item.body }}</p>
+        </div>
       </div>
       <div class="flex items-center justify-between w-3/12 gap-2">
         <button class="rounded-full bg-neutral-400 p-1 w-[80px]" @click.stop="mainStore.toggleNote(item, item.id)">
