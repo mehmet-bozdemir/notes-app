@@ -76,9 +76,9 @@ const updateNote = () => {
         <div :class="item.completed ? 'line-through' : ''"><p>{{ item.body }}</p> </div>
       </div>
       <div class="flex items-center justify-between w-3/12 gap-2">
-        <button class="rounded-full bg-amber-500 p-1 w-[80px]" @click.stop="mainStore.toggleNote(item, item.id)">
-          <span v-if="!item.completed">read</span>
-          <span v-else>undo</span>
+        <button class="rounded-full bg-neutral-400 p-1 w-[80px]" @click.stop="mainStore.toggleNote(item, item.id)">
+          <span v-if="!item.completed">Read</span>
+          <span v-else>Undo</span>
         </button>
         <button class="rounded-full bg-neutral-300 p-1 w-[120px] text-gray-800 font-semibold" @click.stop="setSelectedNote(item)">
           Edit
