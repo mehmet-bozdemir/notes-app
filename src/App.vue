@@ -1,25 +1,37 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import NotesComponent from "@/components/NotesComponent.vue";
 </script>
 
 <template>
-  <header>
-
-
+  <div class="container mx-auto">
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
 
-      <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+
+      <div class="container mx-auto">
+        <div class="mx-auto px-4 py-6">
+          <h1 class="text-3xl text-center font-bold underline p-4">
+            NOTES APP
+          </h1>
+        </div>
+      </div>
+
+      <NotesComponent/>
+
+
+
+<!--      <nav>-->
+<!--        <RouterLink to="/">Home</RouterLink>-->
+<!--        <RouterLink to="/about">About</RouterLink>-->
+<!--      </nav>-->
     </div>
-  </header>
+  </div>
+
+
+
 
   <RouterView />
 </template>
