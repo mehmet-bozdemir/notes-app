@@ -1,25 +1,30 @@
-# notes-app
+<h1 align="center">NOTES APP</h1>
 
-This template should help get you started developing with Vue 3 in Vite.
+## About NOTES APP
 
-## Recommended IDE Setup
+## NOTES-APP is a VUE application
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### DETAILS
 
-## Type Support for `.vue` Imports in TS
+- ### LATEST VUE VERSION VUE@3
+- ### PINIA STORE
+  - #### PINIA is official replacement for VUEX
+- ### VUE ROUTER
+- ### TAILWINDCSS VERSION@3
+- ### TYPESCRIPT VERSION@5
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## HOME page
+<p align="center"> <img src="public/img/note1.png"></p>
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## NOTES view
+<p align="center"> <img src="public/img/note2.png"></p>
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## NOTE toggle (read/undo)
+<p align="center"> <img src="public/img/note3.png"></p>
 
-## Customize configuration
+## NOTE edit page
+<p align="center"> <img src="public/img/note4.png"></p>
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
